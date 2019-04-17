@@ -1,9 +1,9 @@
-create database etl_test;
-use etl_test;
-select * from peace_prosperity;
+create database prosperity_and_peace;
+use prosperity_and_peace;
+select * from index_table;
 
 -- Actual Table and Contents made in python using Pandas.
-CREATE TABLE `peace_prosperity` (
+CREATE TABLE `index_table` (
   `Country` text,
   `GDP Per Capita` bigint(20) DEFAULT NULL,
   `GPI Rank` bigint(20) DEFAULT NULL,
@@ -12,5 +12,6 @@ CREATE TABLE `peace_prosperity` (
   `PI Rank 2012` bigint(20) DEFAULT NULL,
   `Prosperity Index 2012` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 
